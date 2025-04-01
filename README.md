@@ -10,6 +10,9 @@ Swagger para documentação
 git clone https://github.com/gimidia/TaskManager
 cd TaskManagerAPI
 
+## Instale as dependências:
+dotnet restore
+
 ## Como Configurar o Projeto?
 Na pasta TaskManager.Presentation no arquivo appsettings.json, altere a string de conexão:
 "ConnectionStrings": {
@@ -22,18 +25,15 @@ if (!optionsBuilder.IsConfigured)
     optionsBuilder.UseSqlServer("Server=(local)\\sqlexpress;Database=TaskManagerDb;Trusted_Connection=True;TrustServerCertificate=True;");
 }
 
-Instale as dependências:
-dotnet restore
-
-Para criar as migrations e o banco de dados, execute:
+## Para criar as migrations e o banco de dados, execute:
 dotnet ef migrations add InitialCreate --project TaskManager.Infrastructure --startup-project TaskManager.Presentation
 dotnet ef database update --project TaskManager.Infrastructure --startup-project TaskManager.Presentation
 
-Para iniciar a aplicação, execute:
+## Para iniciar a aplicação, execute:
 dotnet run --project TaskManager.Presentation
 
-A API estará disponível em:
+## A API estará disponível em:
 http://localhost:5048
 
-Você pode acessar a documentação Swagger em:
+## Você pode acessar a documentação Swagger em:
 http://localhost:5048/swagger
