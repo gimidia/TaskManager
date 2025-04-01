@@ -7,7 +7,7 @@ SQL Server
 Swagger para documentação
 
 ## Clone o repositório
-git clone https://github.com/seu-usuario/TaskManagerAPI.git
+git clone https://github.com/gimidia/TaskManager
 cd TaskManagerAPI
 
 ## Como Configurar o Projeto?
