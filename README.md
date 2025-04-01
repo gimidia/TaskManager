@@ -15,11 +15,13 @@ dotnet restore
 
 ## Como Configurar o Projeto?
 Na pasta TaskManager.Presentation no arquivo appsettings.json, altere a string de conexão:
+
 "ConnectionStrings": {
    "DefaultConnection": "Server=(local)\\sqlexpress;Database=TaskManagerDb;Trusted_Connection=True;"
 }
 
 Na pasta TaskManager.Infrastructure\Persistence no arquivo AppDBContext.cs, altere a string de conexão:
+
 if (!optionsBuilder.IsConfigured)
 {
     optionsBuilder.UseSqlServer("Server=(local)\\sqlexpress;Database=TaskManagerDb;Trusted_Connection=True;TrustServerCertificate=True;");
@@ -27,6 +29,7 @@ if (!optionsBuilder.IsConfigured)
 
 ## Para criar as migrations e o banco de dados, execute:
 dotnet ef migrations add InitialCreate --project TaskManager.Infrastructure --startup-project TaskManager.Presentation
+
 dotnet ef database update --project TaskManager.Infrastructure --startup-project TaskManager.Presentation
 
 ## Para iniciar a aplicação, execute:
