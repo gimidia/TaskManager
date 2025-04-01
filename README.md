@@ -2,8 +2,11 @@ API para gerenciamento de tarefas, desenvolvida em .NET.
 
 ## Tecnologias Usadas
 .NET 9
+
 Entity Framework Core
+
 SQL Server
+
 Swagger para documentação
 
 ## Clone o repositório
