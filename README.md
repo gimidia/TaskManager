@@ -6,7 +6,7 @@ Entity Framework Core
 SQL Server
 Swagger para documentação
 
-## Clone o repositório**:
+## Clone o repositório
 git clone https://github.com/seu-usuario/TaskManagerAPI.git
 cd TaskManagerAPI
 
