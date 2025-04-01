@@ -11,6 +11,7 @@ Swagger para documentação
 
 ## Clone o repositório
 git clone https://github.com/gimidia/TaskManager
+
 cd TaskManagerAPI
 
 ## Instale as dependências:
