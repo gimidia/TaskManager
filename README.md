@@ -10,7 +10,7 @@ SQL Server
 Swagger para documentação
 
 ## Screenshot
-![Tela do sistema](taskmanager/Swagger.png)
+![Tela do sistema](Swagger.png)
 
 ## Clone o repositório
 git clone https://github.com/gimidia/TaskManager
